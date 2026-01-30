@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0"
+	ProductType="Application"
+	Name="DTCAI.Addin"
+	AppVersion="0.0.1"
+    Description="DTCAI Add-in"
+    SupportedLocales="Enu"
+    Author="DTC"
+    AutodeskProduct="Revit"
+    FriendlyVersion="0.0.1"
+    AppNameSpace="appstore.exchange.autodesk.com">
+
+	<CompanyDetails Name="DTC" />
+
+	<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2025" SeriesMax="R2026" />
+
+	<Components Description="2025 parts">
+		<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2025" SeriesMax="R2025" />
+		<ComponentEntry AppName="DTCAI.Addin" Version="0.0.1" ModuleName="./Contents/2025/DTC.addin" AppDescription="DTCAI Add-in" />
+	</Components>
+
+	<Components Description="2026 parts">
+		<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2026" SeriesMax="R2026" />
+		<ComponentEntry AppName="DTCAI.Addin" Version="0.0.1" ModuleName="./Contents/2026/DTC.addin" AppDescription="DTCAI Add-in" />
+	</Components>
+</ApplicationPackage>

@@ -1,0 +1,36 @@
+I'm still experiencing this error on Windows despite issue #9496 being marked as completed.
+
+**Environment:**
+- OS: Windows
+- OpenCode: Desktop app (Windows)
+- Version: v1.1.21-v1.1.25
+
+**Error:**
+```
+TypeError: Failed to execute 'getComputedStyle' on 'Window': parameter 1 is not of type 'Element'.
+TypeError: parameter 1 is not of type 'Element'.
+    at getComputedStyle$1 (http://tauri.localhost/assets/index-nOUlZVlP.js:1707:91066)
+    at isOverflowElement (http://tauri.localhost/assets/index-nOUlZVlP.js:1707:89839)
+    at getOverflowAncestors (http://tauri.localhost/assets/index-nOUlZVlP.js:1707:91733)
+    at autoUpdate (http://tauri.localhost/assets/index-nOUlZVlP.js:1707:99252)
+    at Object.fn (http://tauri.localhost/assets/index-nOUlZVlP.js:1707:105253)
+    at runComputation (http://tauri.localhost/assets/index-nOUlZVlP.js:2:8250)
+    at updateComputation (http://tauri.localhost/assets/index-nOUlZVlP.js:2:7981)
+    at runTop (http://tauri.localhost/assets/index-nOUlZVlP.js:2:9466)
+    at runUserEffects (http://tauri.localhost/assets/index-nOUlZVlP.js:2:10730)
+    at http://tauri.localhost/assets/index-nOUlZVlP.js:2:10322
+```
+
+**Analysis:**
+This is a Floating UI positioning library issue. The error occurs when:
+1. A floating element (dropdown/tooltip/suggestion box) tries to calculate its position
+2. The element hasn't been fully added to the DOM yet
+3. `autoUpdate` calls `getComputedStyle` on an undefined/null element reference
+
+**Triggers:**
+- Long input strings/prompts causing layout recalculation
+- May be related to "Animate Items" settings
+- First message interaction often triggers it
+
+**Workaround applied:**
+Disabled auto-update in config to prevent version changes. Please re-open or address if this is still being tracked.

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://opencode.ai/schema.json",
+  "name": "dtc-revit-bridge",
+  "version": "1.0.0",
+  "description": "Bridge OpenCode to the DTCAI Revit add-in via the local HTTP bridge. Includes build/install utilities plus the validated wall test.",
+  "permissions": {
+    "bash": {
+      "default": "allow"
+    },
+    "read": {
+      "default": "allow"
+    },
+    "write": {
+      "default": "allow"
+    },
+    "glob": {
+      "default": "allow"
+    },
+    "webfetch": {
+      "default": "deny"
+    }
+  }
+}

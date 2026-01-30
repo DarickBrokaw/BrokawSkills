@@ -1,0 +1,74 @@
+{
+  "name": "skill-retrospective-learner",
+  "version": "1.0.0",
+  "description": "Automated learning and retrospective system that captures lessons learned, updates documentation, and improves future execution efficiency",
+  "author": "OpenCode Community",
+  "permissions": {
+    "read": {
+      "description": "Read AGENTS.md, RUN_REPORT.md, and other documentation to understand context"
+    },
+    "write": {
+      "description": "Update AGENTS.md, RUN_REPORT.md, and documentation with learned lessons"
+    },
+    "edit": {
+      "description": "Modify documentation files to add new rules and guidelines"
+    },
+    "bash": {
+      "description": "Run diagnostic commands to check environment and validate changes"
+    },
+    "glob": {
+      "description": "Find documentation files to update"
+    },
+    "grep": {
+      "description": "Search existing documentation for relevant sections to update"
+    }
+  },
+  "triggers": [
+    {
+      "event": "onTaskFailure",
+      "description": "Trigger learning session when a task fails"
+    },
+    {
+      "event": "onManualWorkaround",
+      "description": "Trigger learning session when user applies manual fix"
+    },
+    {
+      "event": "onEnvironmentCheck",
+      "description": "Trigger learning session for platform-specific issues"
+    },
+    {
+      "event": "manual",
+      "description": "User manually invokes the skill for retrospective"
+    }
+  ],
+  "configuration": {
+    "learning_threshold_minutes": {
+      "type": "number",
+      "default": 5,
+      "description": "Minimum time spent on issue to trigger learning session"
+    },
+    "auto_update_docs": {
+      "type": "boolean",
+      "default": true,
+      "description": "Automatically update documentation with learned lessons"
+    },
+    "ask_followup_questions": {
+      "type": "boolean",
+      "default": true,
+      "description": "Ask follow-up questions for deeper insights"
+    }
+  },
+  "examples": [
+    "Run the learning skill to capture what blocked me and what I learned",
+    "I spent 2 hours on encoding issues - let's document this",
+    "Trigger retrospective on the recent plugin failure"
+  ],
+  "tags": [
+    "learning",
+    "retrospective",
+    "documentation",
+    "improvement",
+    "efficiency"
+  ],
+  "category": "productivity"
+}

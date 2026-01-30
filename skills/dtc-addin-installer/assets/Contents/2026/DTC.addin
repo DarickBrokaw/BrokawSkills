@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>DTCAI.Addin</Name>
+        <FullClassName>Common.Startup</FullClassName>
+        <Text>DTC Add-in</Text>
+        <VisibilityMode>AlwaysVisible</VisibilityMode>
+        <Assembly>DTCAI.Addin.dll</Assembly>
+        <AddInId>ac84fbe2-7c38-412b-b0ce-0454cc670998</AddInId>
+        <VendorId>DTC</VendorId>
+        <VendorDescription>DTC</VendorDescription>
+    </AddIn>
+</RevitAddIns>
