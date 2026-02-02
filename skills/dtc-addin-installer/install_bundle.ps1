@@ -21,7 +21,7 @@ if (Test-Path $resourcesSource) {
     Copy-Item -Path $resourcesSource -Destination $destResources -Recurse -Force
 }
 
-foreach ($year in @(2025, 2026)) {
+foreach ($year in @(2024, 2025, 2026)) {
     $sourceDir = Join-Path $contentsSource ($year.ToString())
     if (-not (Test-Path $sourceDir)) {
         Write-Warning "Missing assets for $year."

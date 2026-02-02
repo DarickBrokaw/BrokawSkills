@@ -12,7 +12,12 @@
 
 	<CompanyDetails Name="DTC" />
 
-	<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2025" SeriesMax="R2026" />
+	<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2024" SeriesMax="R2026" />
+
+	<Components Description="2024 parts">
+		<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2024" SeriesMax="R2024" />
+		<ComponentEntry AppName="DTCAI.Addin" Version="0.0.1" ModuleName="./Contents/2024/DTC.addin" AppDescription="DTCAI Add-in" />
+	</Components>
 
 	<Components Description="2025 parts">
 		<RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2025" SeriesMax="R2025" />
