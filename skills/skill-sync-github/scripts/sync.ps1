@@ -12,11 +12,7 @@ This script performs a bidirectional sync between local skills and GitHub:
 
 $ErrorActionPreference = "Stop"
 
-<<<<<<< HEAD
-$repoRoot = "C:\Users\darick\.config\opencode"
-=======
 $repoRoot = "C:\Users\daric\.config\opencode"
->>>>>>> 4159551 (Sync skills and plugins: 2026-01-26 13:44:45 (HEAD))
 $skillsPath = Join-Path $repoRoot "skills"
 $pluginsPath = Join-Path $repoRoot "plugins"
 $logPath = Join-Path $repoRoot "logs\sync.log"
