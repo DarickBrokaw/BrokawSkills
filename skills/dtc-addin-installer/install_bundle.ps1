@@ -1,3 +1,8 @@
+# Copyright (c) 2026 DT CADRE CO. All Rights Reserved.
+# Proprietary and confidential. Unauthorized use, copying, modification, distribution, or disclosure is prohibited.
+# Use permitted only with express written consent of DT CADRE CO. under a signed contract for services.
+# See LICENSE.txt in the project root for full terms.
+
 $envAppData = $env:APPDATA
 if (-not $envAppData) {
     throw "APPDATA environment variable is not set."

@@ -1,0 +1,31 @@
+DT CADRE CO. PROPRIETARY SOFTWARE LICENSE
+Copyright (c) 2026 DT CADRE CO. All Rights Reserved.
+
+DT CADRE CO., a Florida Profit Corporation (FEI/EIN: 99-2556551), is the sole owner of this
+software project and all related source code, object code, scripts, binaries, documentation,
+designs, specifications, workflows, and other materials (collectively, the "Software").
+
+The Software is proprietary and confidential.
+
+NO LICENSE OR RIGHTS ARE GRANTED EXCEPT BY EXPRESS WRITTEN CONSENT.
+No person or entity may use, access, copy, reproduce, modify, adapt, translate, merge,
+publish, distribute, sublicense, sell, lease, disclose, reverse engineer, decompile,
+disassemble, create derivative works from, or otherwise exploit the Software, in whole or
+in part, for any purpose, without the prior express written consent of DT CADRE CO. under a
+valid written contract for services executed by DT CADRE CO.
+
+Possession of the Software, access to a repository, receipt of files, or exposure to source
+code does not grant any license or permission of any kind.
+
+Any unauthorized use is strictly prohibited and may result in legal action.
+
+All rights, title, and interest in and to the Software, including all intellectual property
+rights, remain exclusively with DT CADRE CO.
+
+For licensing or authorized use requests, contact:
+
+DT CADRE CO.
+Attn: James Brokaw
+2917 W State Rd 434, Suite 131
+Longwood, FL 32779
+FEI/EIN: 99-2556551
