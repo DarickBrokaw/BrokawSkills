@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git Only"
+  short_description: "Sync and clean current branch/worktree"
+  default_prompt: "Use gitonly to safely commit, push, merge, sync, and clean only the current session branch and worktree."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git All"
+  short_description: "Sync and clean all repo branches/worktrees"
+  default_prompt: "Use gitall to safely commit, push, merge, sync, and clean every branch and worktree in this repository."
