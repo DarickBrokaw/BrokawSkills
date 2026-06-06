@@ -4,9 +4,6 @@
   // 1) Auto-update
   "autoupdate": false,
 
-  // 2) Theme
-  "theme": "tokyonight",
-
   // 3) Default model (provider_id/model_id)
   "model": "moonshotai/kimi-k2",
 
