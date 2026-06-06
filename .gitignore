@@ -1,0 +1,11 @@
+node_modules
+package.json
+bun.lock
+.gitignore
+githubtoken.md
+logs/
+plan.md
+skills/asis-skill-namer/scripts/
+/opencode.jsonc.tui-migration.bak
+/plugins.zip
+/skills.zip
