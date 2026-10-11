@@ -28,7 +28,23 @@
     }
   },
 
-  // 5) Set all tools to allow (explicitly)
+  // 5) Tasktracker MCP server (stdio bridge to the local server at 127.0.0.1:8787)
+  "mcp": {
+    "tasktracker": {
+      "type": "local",
+      "command": [
+        "C:\\Users\\daric\\Downloads\\DTC\\Tasktracker\\installer\\build\\stage\\runtime\\node.exe",
+        "C:\\Users\\daric\\Downloads\\DTC\\Tasktracker\\installer\\build\\stage\\app\\bin\\tasktracker-mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "TASKTRACKER_URL": "http://127.0.0.1:8787",
+        "TASKTRACKER_TOKEN": "ttk_pM5IylUIpwz4qG0qgpIM6lXz"
+      }
+    }
+  },
+
+  // 6) Set all tools to allow (explicitly)
   "permission": {
     "bash": "allow",
     "edit": "allow",
